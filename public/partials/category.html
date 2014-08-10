@@ -1,0 +1,10 @@
+<div class="container">
+    <h1>Items in "{{ menu.name }}" > "{{ category.name }}"</h1>
+    <ul>
+      <li data-ng-repeat="item in items">
+      	<div data-ng-repeat="size in item.sizes">
+        	{{ item.name }} - {{ size.size }} - Price: {{ size.price }}
+        </div>
+      </li>
+    </ul>
+</div>

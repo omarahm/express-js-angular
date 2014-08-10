@@ -1,0 +1,10 @@
+<div class="container">
+    <h1>Available Menus</h1>
+    <ul>
+      <li data-ng-repeat="menu in menus">
+        <a href="#/menus/{{ menu.id }}">{{ menu.name }}</a>
+      </li>
+    </ul>
+
+    <a href="#/search">Search</a>
+</div>

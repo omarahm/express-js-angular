@@ -1,0 +1,8 @@
+<div class="container">
+    <input type="text" name="search" placeholder="Enter your keyword" data-ng-model="searchKeyword" data-ng-change="refreshSearch()" />
+    <ul>
+    	<li data-ng-repeat="result in results">
+    		{{ result.name }} - {{ result.size }} -- {{ result.price }}
+    	</li>
+    </ul>
+</div>

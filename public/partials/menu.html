@@ -1,0 +1,8 @@
+<div class="container">
+    <h1>Categories in "{{ menu.name }}"</h1>
+    <ul>
+      <li data-ng-repeat="category in categories">
+        <a href="#/menus/{{ menu.id }}/categories/{{ category.id }}">{{ category.name }}</a>
+      </li>
+    </ul>
+</div>
